@@ -1,0 +1,53 @@
+h3.tittle-w3layouts {
+    text-shadow: 2px 2px 2px rgba(41, 41, 41, 0.15);
+    font-size: 40px;
+    font-weight: 100;
+    position: relative;
+    color: #4a4a4a;
+}
+
+h3.tittle-w3layouts:before {
+    content: "";
+    background: #aba9a9;
+    width: 70px;
+    height: 2px;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+}
+
+h4.sub-tittle-w3layouts {
+    color: rgb(88, 189, 248);
+    font-size: 20px;
+}
+
+p.para-text {
+    color: rgb(51, 51, 51);
+    font-size: 18px;
+}
+
+.who-left-w3pvt {
+    padding: 1em 10em 0 6em !important;
+}
+
+h3.w3ls-title {
+    font-size: 40px;
+}
+
+h3.w3ls-title span {
+    display: block;
+    font-size: 17px;
+    color: rgb(88, 189, 248);
+    font-weight: 400;
+}
+
+.services-w3ls-grid-2 i {
+    color: #ffcd30;
+    font-size: 48px;
+}
+
+.services-w3ls-grid-2 h4 {
+    font-size: 20px;
+    padding: 0 1em;
+    line-height: 1.5;
+}

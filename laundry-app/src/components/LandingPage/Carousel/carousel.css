@@ -1,0 +1,46 @@
+#topic{
+    color: rgb(252, 249, 249);
+    padding-top: 300px;
+    text-shadow: 1px 1px 1px #000;
+    font-size: 700%;
+    opacity: 0.6;
+    font-weight: bold;
+    transition: 0.3s;
+}
+#topic:hover,
+#topic:active{
+    opacity: 1;
+    letter-spacing: 5px;
+}
+#topic:hover::after,
+#topic:hover::before
+{
+    backface-visibility: hidden;
+  border-color: black;
+  transition: width 350ms ease-in-out;
+  width: 70%;
+}
+#topic:hover::before{
+    bottom: auto;
+  top: 0;
+  width: 70%;
+}
+#topic:after,
+#topic:before{
+    backface-visibility: hidden;
+  border: 1px solid rgba(#fff, 0);
+  bottom: 0px;
+  content: " ";
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  transition: all 280ms ease-in-out;
+  width: 0;
+}
+#tag{
+    color: white;
+    font-family: cursive;
+    font-weight: bold;
+    text-shadow: black;
+    font-size: 150%;
+}
