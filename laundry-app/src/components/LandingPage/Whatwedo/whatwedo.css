@@ -282,7 +282,55 @@ h6.description{
     padding: 0px;
 }
 /*--------------------*/
+/*-----Contact-------*/
+.contact{
+	padding:5em 0em;
+}
+.agile-contact-grids h3 {
+    text-align: center;
+    font-size: 45px;
+    color: #000;
+    margin: 0em 0 1em;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 50px;
+}
+.address-grid h4,.contact-form h4,.agileits-map h4{
+    color:rgba(255, 0, 0, 0.94);
+    font-size: 2em;
+    margin: 0;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
 
+.contact-form {
+    padding: 3em;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.contact-form h4{
+	margin-bottom:2em;
+}
+.styled-input.agile-styled-input-top {
+    margin-top: 0;
+} 
+.contact input[type="text"],.contact input[type="email"],.contact textarea{
+    font-size: .9em;
+    color: #fff;
+    padding: 1.5em 1em;
+    border: 0;
+    width: 100%;
+    border-bottom: 2px solid #fff;
+    background: none;
+    -webkit-appearance: none;
+	outline: none;
+	letter-spacing:1px;
+	box-sizing:border-box;
+}
+.contact textarea { 
+	min-height: 10em;
+    resize: none;
+} 
 
 
 
