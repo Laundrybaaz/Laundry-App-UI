@@ -6,6 +6,7 @@ import image3 from '../../Assets/s1.png';
 import image4 from '../../Assets/pp.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCloudSun, faEraser, faExclamation, faCar } from '@fortawesome/free-solid-svg-icons'
+import { SocialIcon } from 'react-social-icons';
 class WhatwedoComponent extends Component {
     render() {
         return (
@@ -140,6 +141,37 @@ class WhatwedoComponent extends Component {
 
 
                             <div class="clearfix"> </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer" id="footer">
+                    <div class="container">
+                        <div class="list">
+                            <div class="col-md-3 wthree_fl">
+                                <a href="#">LAUNDRYBAAZ</a>
+                            </div>
+
+                            <div class="col-md-6 wthree_fc">
+                                <h6> KULATHOOR </h6>
+                                <h6> 670704 KARIMANAL </h6>
+                                <h6> TRIVANDRUM </h6>
+                                <h6> KERALA </h6>
+                            </div>
+
+                            <div class="col-md-3 wthree_fr">
+                                <h6>+91 9656080549</h6>
+                                <h6><a href="mailto:service@decorate.com">chainlaunders@gmail.com</a></h6>
+
+                            </div>
+
+                            <div class="col-md-12 wthree_fr" text-align="center" >
+                                <SocialIcon url="https://twitter.com/NobleJoy12" style={{ margin: "10px" }} />
+                                <SocialIcon url="https://www.instagram.com/noble_joy/" style={{ margin: "10px" }} />
+                                <SocialIcon url="https://www.facebook.com/noble.joy.739/" style={{ margin: "10px" }} />
+                                <SocialIcon url="https://github.com/Laundrybaaz" style={{ margin: "10px" }} />
+                            </div>
+
+
                         </div>
                     </div>
                 </div>

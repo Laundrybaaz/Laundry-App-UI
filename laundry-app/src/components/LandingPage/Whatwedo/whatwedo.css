@@ -93,12 +93,6 @@ h3.w3ls-title span {
 /*-=-=-=-=-=-=-=-=-=-=-=- */
 
 
-/*
-Author: W3layout
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
-*/
 
 html,
 body {
@@ -331,8 +325,73 @@ h6.description{
 	min-height: 10em;
     resize: none;
 } 
+/*--------footer-------*/
+.list {
+    display: -ms-flexbox;
+display: flex;
+display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+-ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  justify-content: space-between;
+  -ms-flex-pack: justify;
+  -ms-flex-pack: space-between;
+  margin-bottom: 3%;
+  letter-spacing: 1px;
+  font-size: 16px;
+}
+.wthree_fl a {
+  font-size: 30px;
+}
+.list a {
+  margin: 20px 0px;
+  margin-left: 0;
+  display: inline-block;
+  color: #fff;
+}
+.wthree_fc {
+  text-align: center;
+}
+.wthree_fc h6 {
+  font-size: 15px;
+  margin-bottom: 15px;
+  letter-spacing: 2px;
+  color: #fff;
+  font-weight: 600;
+}
+.wthree_fr {
+  text-align: right;
+}
+.wthree_fr a {
+  font-size: 15px;
+  text-align: right;
+ 
+}
+.list ul li {
+  list-style-type: none;
+}
+.list li {
+  margin: 15px 0px;
+}
+.footer {
+  padding: 30px 0px;
+  background: black;
+  color: white;
+}
+.wthree_fl h6 {
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  text-align: center;
+  letter-spacing: 2px;
+  color: #fff;
+}
 
-
+SocialIcon{
+    margin: "20px" ;
+}
 
 
 
