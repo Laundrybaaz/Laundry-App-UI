@@ -3,6 +3,7 @@ import './whatwedo.css';
 import image1 from '../../Assets/s3.png';
 import image2 from '../../Assets/s2.png';
 import image3 from '../../Assets/s1.png';
+import image4 from '../../Assets/pp.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCloudSun, faEraser, faExclamation, faCar } from '@fortawesome/free-solid-svg-icons'
 class WhatwedoComponent extends Component {
@@ -86,6 +87,42 @@ class WhatwedoComponent extends Component {
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </section>
+                <section className="team" id="team">
+                    <div className="container">
+                        <h3 className="title clr">Meet Our Team</h3>
+                        <div className="row pt-md">
+                            <div className="col-lg-6 col-md-6 col-sm-6 profile">
+                                <div className="bodr-img">
+                                    <div className="img-box">
+                                        <img src={image4} alt="" />
+                                        <ul className="text-center">
+                                            <li>
+                                                <h4>Noble Joy</h4>
+                                            </li>
+                                            <li>
+                                                <h6>Developer</h6>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-lg-6 col-md-6 col-sm-6 profile">
+                                <div className="img-box">
+                                    <img src="https://avatars3.githubusercontent.com/u/29887279?s=400&u=134c48e32a840b134a2c52456faac0dece665b2f&v=4" alt="" />
+                                    <ul className="text-center">
+                                        <li>
+                                            <h4>Deep Roy</h4>
+                                        </li>
+                                        <li>
+                                            <h6>Developer</h6>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="clearfix"></div>
                     </div>
                 </section>
             </div>

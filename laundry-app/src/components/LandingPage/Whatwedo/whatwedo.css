@@ -183,7 +183,105 @@ p.count-text {
 .counter {
     background: rgba(16, 16, 16, 0.3);
 }
+/*--------------------------------*/
+/*-----Team-------*/
+.team{
+    padding:75px 0;
+    background: url(../../Assets/slide11.jpg) no-repeat;
+    background-size: cover;
+    min-height: 500px;
+    background-attachment: fixed;
 
+}
+.title {
+    font-size: 50px;
+    text-align: center;
+    color: #000;
+    margin-bottom: 37px;
+    letter-spacing: 3px;
+    font-weight: 600;
+    text-transform: uppercase;
+
+}
+.clr {
+    color: black;
+    text-shadow: 1px 1px 1px #000;
+    font-weight: bold;
+}
+h6.description{
+	font-weight: bold;
+	letter-spacing: 2px;
+	color: #999;
+	border-bottom: 1px solid rgba(0, 0, 0,0.1);
+	padding-bottom: 5px;
+}
+.profile ul li h4 {
+    font-weight: 600;
+    font-size: 20px;
+    color: #fff;
+}
+.profile ul li h6 {
+    font-size: 16px;
+    margin-top: 8px;
+    color: #03ff0e;
+}
+.profile .img-box{
+	opacity: 1;
+	display: block;
+	position: relative;
+}
+.profile .img-box:after{
+	content:"";
+	opacity: 0;
+	background-color: rgba(0, 0, 0, 0.75);
+	position: absolute;
+	right: 0;
+	left: 0;
+	top: 0;
+	bottom: 0;
+}
+.img-box ul {
+    position: absolute;
+    z-index: 2;
+    top: 122px;
+    text-align: center;
+    width: 100%;
+    padding-left: 0px;
+    height: 0px;
+    margin: 0px;
+    opacity: 0;
+}
+.profile .img-box:after, .img-box ul, .img-box ul li{
+	-webkit-transition: all 0.5s ease-in-out 0s;
+    -moz-transition: all 0.5s ease-in-out 0s;
+    transition: all 0.5s ease-in-out 0s;
+}
+.img-box ul li {
+    display: block;
+}
+.img-box:hover:after{
+	opacity: 1;
+}
+.img-box:hover ul {
+    opacity: 1;
+    margin-bottom: 15px;
+}
+.img-box ul a{
+	-webkit-transition: all 0.3s ease-in-out 0s;
+	-moz-transition: all 0.3s ease-in-out 0s;
+	transition: all 0.3s ease-in-out 0s;
+}
+.img-box a:hover li {
+    border-color: #fff;
+    color: #ff5722;
+}
+.img-box img {
+    width: 100%;
+}
+.profile {
+    padding: 0px;
+}
+/*--------------------*/
 
 
 
