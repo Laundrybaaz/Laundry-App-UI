@@ -12,6 +12,7 @@ class SignUpComponent extends Component {
         this.closeModal = this.closeModal.bind(this);
         this.responseGoogle = this.responseGoogle.bind(this);
         this.responseFacebook = this.responseFacebook.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
 
     }
     responseGoogle = (response) => {
@@ -25,6 +26,43 @@ class SignUpComponent extends Component {
     }
     closeModal() {
         this.setState({ open: false });
+    }
+    handleSubmit(event){
+        event.preventDefault();
+        
+        let registerPayload = {
+            FirstName: event.target.firstname.value,
+            LastName: event.target.lastname.value,
+            Email: event.target.email.value,
+            Address: event.target.address.value,
+            Password: event.target.password.value
+        }
+        console.log(registerPayload)
+       /* const form = event.target;
+        const data = new FormData(form);
+    
+        for (let name of data.keys()) {
+          const input = form.elements[name];
+          const parserName = input.dataset.parse;
+    
+          if (parserName) {
+            const parser = inputParsers[parserName];
+            const parsedValue = parser(data.get(name));
+            data.set(name, parsedValue);
+          }
+        }
+        */
+        fetch('https://localhost:5001/api/laundry/SignUp', {
+          method: 'POST',
+          body: JSON.stringify(registerPayload),
+          headers: {
+              'Accept': 'application/json, text/plain, */*',
+              'Content-type': 'application/json'
+          }
+        })
+        .then(data => console.log(data))
+        .catch(err => console.log(err.Message))
+        this.closeModal()
     }
 
     render() {
@@ -43,13 +81,15 @@ class SignUpComponent extends Component {
                         <div id="login-box">
                             <div class="left">
                                 <h1>Sign up</h1>
-
-                                <input type="text" name="username" placeholder="Username" />
-                                <input type="text" name="email" placeholder="E-mail" />
-                                <input type="password" name="password" placeholder="Password" />
-                                <input type="password" name="password2" placeholder="Retype password" />
-
-                                <input type="submit" name="signup_submit" value="Sign me up" />
+                                <form onSubmit={this.handleSubmit}>
+                                    <input type="text" name="firstname" placeholder="First Name" />
+                                    <input type="text" name="lastname" placeholder="Last Name" />
+                                    <input type="text" name="email" placeholder="E-mail" />
+                                    <input type="text" name="address" placeholder="Address" />
+                                    <input type="password" name="password" placeholder="Password" />
+                                    <input type="password" name="password2" placeholder="Retype password" />
+                                    <button>Send data!</button>
+                                </form>
                             </div>
 
                             <div class="right">
