@@ -38,20 +38,7 @@ class SignUpComponent extends Component {
             Password: event.target.password.value
         }
         console.log(registerPayload)
-       /* const form = event.target;
-        const data = new FormData(form);
-    
-        for (let name of data.keys()) {
-          const input = form.elements[name];
-          const parserName = input.dataset.parse;
-    
-          if (parserName) {
-            const parser = inputParsers[parserName];
-            const parsedValue = parser(data.get(name));
-            data.set(name, parsedValue);
-          }
-        }
-        */
+       
         fetch('https://localhost:5001/api/laundry/SignUp', {
           method: 'POST',
           body: JSON.stringify(registerPayload),
@@ -60,6 +47,7 @@ class SignUpComponent extends Component {
               'Content-type': 'application/json'
           }
         })
+        .then(response => response.json())
         .then(data => console.log(data))
         .catch(err => console.log(err.Message))
         this.closeModal()

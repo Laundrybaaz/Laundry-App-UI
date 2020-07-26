@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Navbar, Nav, Button } from 'react-bootstrap'
 import SignUpComponent from '../SignUp/SignUpComponent'
 import logo from '../../../laundry.svg'
+import SignInComponent from '../SignIn/SignInComponent';
 class navbar extends Component {
 
     render() {
@@ -26,7 +27,7 @@ class navbar extends Component {
                         <Nav.Link href="#home">Clothes</Nav.Link>
                         <Nav.Link href="#features">Features</Nav.Link>
                         <Nav.Link href="#pricing">Pricing</Nav.Link>
-                        <Button variant="primary" id="s">SIGN IN</Button>{' '}
+                        <SignInComponent/>
                         <SignUpComponent />
                     </Nav>
                 </Navbar.Collapse>
