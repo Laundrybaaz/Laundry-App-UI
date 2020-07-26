@@ -3,6 +3,7 @@ import './navbar.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Navbar, Nav, Button, NavDropdown } from 'react-bootstrap'
 import SignUpComponent from '../LandingPage/SignUp/SignUpComponent'
+import SignInComponent from '../LandingPage/SignIn/SignInComponent'
 import logo from '../../laundry.svg'
 import MensApparel from '../Clothes/MensApparel/MensApparel';
 class navbar extends Component {
@@ -21,9 +22,7 @@ class navbar extends Component {
     getComponent() {
         console.log("hello")
         if (this.state.showModal) {  // show the modal if state showModal is true
-            return <MensApparel />;
-        } else {
-            return null;
+            return <MensApparel/>;
         }
     }
     render() {
@@ -51,8 +50,8 @@ class navbar extends Component {
                         </NavDropdown>
                         <Nav.Link href="#features">Features</Nav.Link>
                         <Nav.Link href="#pricing">Pricing</Nav.Link>
-                        <Button variant="primary" id="s">SIGN IN</Button>{' '}
-                        <SignUpComponent />
+                        <SignInComponent/>
+                        <SignUpComponent/>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>);
