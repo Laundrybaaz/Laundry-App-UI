@@ -1,0 +1,15 @@
+#Logo{
+	font-family: Oswald;
+	position: relative;
+	padding-left: 10px;
+}
+#s{
+	margin-right: 10px;
+}
+#nav-dropdown{
+	color: #FFFFFF80;
+	background-color: #343a40; 
+}
+.dropdown-menu{
+	background-color: #343a40;
+}

@@ -68,9 +68,7 @@ class SignUpComponent extends Component {
     render() {
         return (
             <div>
-                <head><script src="https://apis.google.com/js/platform.js" async defer></script>
-                    <meta name="google-signin-client_id" content="970592329073-5r0bs93hmd177h91mm4oh58pbsmvdu4n.apps.googleusercontent.com" />
-                </head>
+
                 <Button variant="success" onClick={this.openModal}> SIGN UP </Button>
                 <Popup
                     open={this.state.open}
@@ -78,8 +76,8 @@ class SignUpComponent extends Component {
                     onClose={this.closeModal}
                 >
                     <div class="container">
-                        <div id="login-box">
-                            <div class="left">
+                        <div id="login-box" class="row">
+                            <div class="left col-md-5">
                                 <h1>Sign up</h1>
                                 <form onSubmit={this.handleSubmit}>
                                     <input type="text" name="firstname" placeholder="First Name" />
@@ -91,8 +89,8 @@ class SignUpComponent extends Component {
                                     <button>Send data!</button>
                                 </form>
                             </div>
-
-                            <div class="right">
+                            <div class="or col-md-2">OR</div>
+                            <div class="right col-md-5">
                                 <span class="loginwith">Sign in with<br />social network</span>
 
                                 <FacebookLogin
@@ -116,7 +114,7 @@ class SignUpComponent extends Component {
                                     cookiePolicy={'single_host_origin'}
                                 />
                             </div>
-                            <div class="or">OR</div>
+
                         </div>
                     </div>
                 </Popup>

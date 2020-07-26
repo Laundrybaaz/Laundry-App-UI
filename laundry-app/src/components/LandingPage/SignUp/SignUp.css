@@ -160,3 +160,9 @@ button.social-signin.twitter {
 button.social-signin.google {
   background: #DD4B39;
 }
+
+@media only screen and (max-width : 767px) {
+  .container{
+    display: none;
+  }
+}

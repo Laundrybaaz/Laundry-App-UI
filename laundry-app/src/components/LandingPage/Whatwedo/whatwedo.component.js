@@ -148,7 +148,7 @@ class WhatwedoComponent extends Component {
                     <div class="container">
                         <div class="list">
                             <div class="col-md-3 wthree_fl">
-                                <a href="#">LAUNDRYBAAZ</a>
+                                <a href="#top">LAUNDRYBAAZ</a>
                             </div>
 
                             <div class="col-md-6 wthree_fc">

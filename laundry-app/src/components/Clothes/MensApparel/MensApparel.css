@@ -1,0 +1,71 @@
+#myVideo {
+    position: absolute;;
+    z-index: -1;
+    width:100%;     
+    height: auto;
+}
+@media (min-aspect-ratio: 16/9) {
+    #myVideo {
+        width:100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9) {
+    #myVideo { 
+        width:auto;
+        height: 100%;
+    }
+}
+#tt{
+    position: absolute;
+    top: 15%;
+    left:35%;
+  }
+  legend{
+    position: relative;
+    margin-left: 135px;
+    color: lightgrey;
+    font-family: Jazz LET, fantasy;
+    font-size: 200%;
+    border-bottom: none;
+    font-style: normal;
+  }
+  fieldset{
+    border-radius: 5px;
+    background:rgba(0,0,0,0.5);
+    padding: 20px;
+    border: 1px solid black;
+    width: 450px;
+    height: 700px;
+    margin: auto;
+    overflow: auto;
+  }
+
+  .form-control{
+    width: 350px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid black;
+    border-radius: 4px;
+    box-sizing: border-box;
+    display: inline-block;
+  }
+
+  label{
+    float: left;
+    color: white;
+  }
+  .form-group{
+    margin-left: 15px;
+  }
+  #ff{
+    position: relative;
+    left: 40%;
+    border: black;
+    color: black;
+    background: whitesmoke;
+    border-radius: 30px;
+    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
