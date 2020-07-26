@@ -51,8 +51,8 @@ class navbar extends Component {
                         </NavDropdown>
                         <Nav.Link href="#features">Features</Nav.Link>
                         <Nav.Link href="#pricing">Pricing</Nav.Link>
-                        <Button variant="primary" id="s">SIGN IN</Button>{' '}
-                        <SignUpComponent />
+                        <SignInComponent/>
+                        <SignUpComponent/>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>);
