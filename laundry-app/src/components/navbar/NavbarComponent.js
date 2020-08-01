@@ -43,8 +43,8 @@ class navbar extends Component {
                     <Nav className="mr-auto"></Nav>
                     <Nav>
 
-                        <NavDropdown title="Clothes" id="collasible-nav-dropdown" class="dropdown-menu">
-                            <NavDropdown.Item href="#action/3.1" id="nav-dropdown" onClick={this.handleClick}>Men {this.getComponent}</NavDropdown.Item>
+                        <NavDropdown title="Clothes" id="collasible-nav-dropdown dropdown-menu">
+                            <NavDropdown.Item href="#action/3.1" id="nav-dropdown" onClick={this.handleClick}>Men</NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.2" id="nav-dropdown">Women</NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.3" id="nav-dropdown">Kids</NavDropdown.Item>
                         </NavDropdown>

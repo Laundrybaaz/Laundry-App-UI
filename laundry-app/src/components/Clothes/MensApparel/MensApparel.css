@@ -21,6 +21,22 @@
     top: 15%;
     left:35%;
   }
+  #res{
+    position: relative;
+    left: 70%;
+    border: black;
+    color: black;
+    background: whitesmoke;
+    border-radius: 0px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  #valid{
+      color:red;
+      margin-left:15px;
+      font-weight: bold;
+  }
   legend{
     position: relative;
     margin-left: 135px;
